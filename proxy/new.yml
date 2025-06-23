@@ -1,46 +1,57 @@
 proxies:
-- name: 🇸🇬 SNI IG
-  type: vmess
-  server: sg.alphawave.web.id
-  port: 443
-  uuid: d1ecfa76-9b4f-4ed2-8e28-48206cdf21da
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: graph.instagram.com
-  network: ws
-  udp: true
-  ws-opts:
-    path: /s3B0l0UVA3uieZUuikXjJiH4znU
-    headers:
-      Host: graph.instagram.com
-- name: pake
-  type: vmess
-  server: 104.18.22.158
-  port: 443
-  uuid: cecc8108-9e97-460e-9654-e18d3879d4c3
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  servername: sgo.mabar.social
-  ws-opts:
-    path: /vmess
-    headers:
-      Host: sgo.mabar.social
-  udp: true
-- name: Akamai SG
-  server: 104.18.22.158
-  port: 443
+- name: Melbi
   type: trojan
-  password: enakbet
-  skip-cert-verify: true
-  sni: uhuy.kenikmatan.xyz
-  network: ws
-  ws-opts:
-    path: /uhuy
-    headers:
-      Host: uhuy.kenikmatan.xyz
+  server: sg4.6n6.net
+  port: 443
+  password: b2a7ce20-4132-11f0-92a4-1239d0255272
   udp: true
+  sni: edge-ig-mqtt-p4-shv-sin6.facebook.com
+  alpn:
+    - h2
+    - http/1.1
+  skip-cert-verify: true
+- name: Melbi_2
+  type: trojan
+  server: sg4.6n6.net
+  port: 443
+  password: 3c001f70-4b71-11f0-b662-1239d0255272
+  udp: true
+  sni: edge-ig-mqtt-p4-shv-sin6.facebook.com
+  alpn:
+    - h2
+    - http/1.1
+  skip-cert-verify: true
+  
+- name: SGHE_1
+  type: trojan
+  server: sg1.6n6.net
+  port: 443
+  password: 8fed5f50-4b71-11f0-9a7d-1239d0255272
+  udp: true
+  sni: edge-ig-mqtt-p4-shv-sin6.facebook.com
+  alpn:
+    - h2
+    - http/1.1
+  skip-cert-verify: true
+- name: SGHE_2
+  type: trojan
+  server: sg2.6n6.net
+  port: 443
+  password: fca646c0-4b71-11f0-9b21-1239d0255272
+  udp: true
+  sni: edge-ig-mqtt-p4-shv-sin6.facebook.com
+  alpn:
+    - h2
+    - http/1.1
+  skip-cert-verify: true
+- name: SGHE_3
+  type: trojan
+  server: sg3.6n6.net
+  port: 443
+  password: f56c0940-4132-11f0-94be-1239d0255272
+  udp: true
+  sni: edge-ig-mqtt-p4-shv-sin6.facebook.com
+  alpn:
+    - h2
+    - http/1.1
+  skip-cert-verify: true
