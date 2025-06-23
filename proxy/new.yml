@@ -1,0 +1,46 @@
+proxies:
+- name: 🇸🇬 SNI IG
+  type: vmess
+  server: sg.alphawave.web.id
+  port: 443
+  uuid: d1ecfa76-9b4f-4ed2-8e28-48206cdf21da
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: graph.instagram.com
+  network: ws
+  udp: true
+  ws-opts:
+    path: /s3B0l0UVA3uieZUuikXjJiH4znU
+    headers:
+      Host: graph.instagram.com
+- name: pake
+  type: vmess
+  server: 104.18.22.158
+  port: 443
+  uuid: cecc8108-9e97-460e-9654-e18d3879d4c3
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  servername: sgo.mabar.social
+  ws-opts:
+    path: /vmess
+    headers:
+      Host: sgo.mabar.social
+  udp: true
+- name: Akamai SG
+  server: 104.18.22.158
+  port: 443
+  type: trojan
+  password: enakbet
+  skip-cert-verify: true
+  sni: uhuy.kenikmatan.xyz
+  network: ws
+  ws-opts:
+    path: /uhuy
+    headers:
+      Host: uhuy.kenikmatan.xyz
+  udp: true
